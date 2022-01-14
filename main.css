@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: black;
+  background-image: linear-gradient(rgb(132, 0, 255), rgb(165, 0, 155));
+}
+
+@media screen and (max-width: 1280px) {
+  #app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #app {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 17rem);
+  gap: 1.4rem;
+  padding: 1.4rem;
+}
+
+.note {
+  height: 45vh;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: hidden;
+  font-size: large;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 1.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.6);
+  background-color: white;
+}
+
+.add-note {
+  height: 45vh;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 8rem;
+  color: rgba(0, 0, 0);
+  box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  background-image: linear-gradient(rgba(132, 0, 255, 0.8), rgba(165, 0, 155, 0.8));
+}
+
+.add-note:hover {
+  background-image: linear-gradient(rgb(132, 0, 255), rgb(165, 0, 155));
+}
