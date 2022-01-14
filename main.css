@@ -48,10 +48,13 @@ body {
 }
 
 .note {
+  float: top;
   height: 45vh;
+  min-height: 45vh;
+  max-height: 90vh;
   border: none;
   outline: none;
-  resize: none;
+  resize: vertical;
   overflow-y: hidden;
   font-size: large;
   font-family: sans-serif;
