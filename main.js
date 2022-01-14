@@ -24,7 +24,7 @@ function createNoteElement(id, content) {
   const element = document.createElement("textarea"); // added a textarea to the html
   element.classList.add("note"); // created a "note" class / element
   element.value = content; // will get the content from user in the "addNote" function
-  element.placeholder = "Write something here.."; // if content is empty, placeholder will be shown
+  element.placeholder = "Write something here..\nDouble click to delete..\nNotes will be saved to the local storage.."; // if content is empty, placeholder will be shown
 
   // on evrery change this will update the saved note
   element.addEventListener("change", () => {
